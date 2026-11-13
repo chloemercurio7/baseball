@@ -5,5 +5,12 @@
     "title": "Baseball",
     "section": "",
     "text": "Baseball Through the Years\nExplore the history of Major League Baseball through its data. Using the Lahman database, this site traces the players, teams, and seasons that have shaped the game."
+  },
+  {
+    "objectID": "home-runs.html#season-comparison",
+    "href": "home-runs.html#season-comparison",
+    "title": "Home runs",
+    "section": "Season comparison",
+    "text": "Season comparison\n\n\n# A tibble: 4 × 4\n  yearID total_home_runs total_team_games home_runs_per_game\n   &lt;int&gt;           &lt;int&gt;            &lt;int&gt;              &lt;dbl&gt;\n1   2019            6776             4858               1.39\n2   1981            1781             2788               0.64\n3   1994            3306             3200               1.03\n4   2020            2304             1796               1.28"
   }
 ]

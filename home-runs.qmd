@@ -21,3 +21,17 @@ Teams |>
     caption = "Source: Lahman database"
   )
 ```
+
+## Season comparison
+
+```{r}
+Teams |>
+  filter(yearID %in% c(2019, 1981, 1994, 2020)) |>
+  group_by(yearID) |>
+  summarize(
+    total_home_runs = sum(HR),
+    total_team_games = sum(G)
+  ) |>
+  mutate(home_runs_per_game = round(total_home_runs / total_team_games, 2)) |>
+  arrange(match(yearID, c(2019, 1981, 1994, 2020)))
+```
