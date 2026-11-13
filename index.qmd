@@ -4,4 +4,6 @@ title: "Baseball"
 
 # Baseball Through the Years
 
-Explore the history of Major League Baseball through its data. Using the Lahman database, this site traces the players, teams, and seasons that have shaped the game.
+Explore Major League Baseball history through the Lahman database. Season totals can make shortened years look like home-run collapses; the Home runs page uses home runs per team-game to put those totals in context and show how the rate varies across seasons.
+
+The Sluggers page ranks career home-run leaders, with Barry Bonds at the top with 762, and looks at their years in the game and Bonds' season-by-season totals. Visit the analysis pages in the navbar to explore both stories.
