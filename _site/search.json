@@ -7,6 +7,13 @@
     "text": "Baseball Through the Years\nExplore the history of Major League Baseball through its data. Using the Lahman database, this site traces the players, teams, and seasons that have shaped the game."
   },
   {
+    "objectID": "sluggers.html",
+    "href": "sluggers.html",
+    "title": "Sluggers",
+    "section": "",
+    "text": "# A tibble: 15 × 2\n   player           career_home_runs\n   &lt;chr&gt;                       &lt;int&gt;\n 1 Barry Bonds                   762\n 2 Hank Aaron                    755\n 3 Babe Ruth                     714\n 4 Albert Pujols                 703\n 5 Alex Rodriguez                696\n 6 Willie Mays                   660\n 7 Ken Griffey                   630\n 8 Jim Thome                     612\n 9 Sammy Sosa                    609\n10 Frank Robinson                586\n11 Mark McGwire                  583\n12 Harmon Killebrew              573\n13 Rafael Palmeiro               569\n14 Reggie Jackson                563\n15 Manny Ramirez                 555"
+  },
+  {
     "objectID": "home-runs.html",
     "href": "home-runs.html",
     "title": "Home runs",

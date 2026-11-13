@@ -1,0 +1,21 @@
+---
+title: "Sluggers"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(Lahman)
+```
+
+```{r}
+Batting |>
+  group_by(playerID) |>
+  summarize(career_home_runs = sum(HR, na.rm = TRUE), .groups = "drop") |>
+  slice_max(career_home_runs, n = 15, with_ties = FALSE) |>
+  left_join(People |> select(playerID, nameFirst, nameLast), by = "playerID") |>
+  transmute(
+    player = paste(nameFirst, nameLast),
+    career_home_runs
+  )
+```
