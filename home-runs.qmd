@@ -9,5 +9,10 @@ library(Lahman)
 ```
 
 ```{r}
-Teams
+Teams |>
+  group_by(yearID) |>
+  summarize(
+    total_home_runs = sum(HR),
+    total_team_games = sum(G)
+  )
 ```
