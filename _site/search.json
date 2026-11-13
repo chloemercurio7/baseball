@@ -11,7 +11,7 @@
     "href": "sluggers.html",
     "title": "Sluggers",
     "section": "",
-    "text": "# A tibble: 15 × 2\n   player           career_home_runs\n   &lt;chr&gt;                       &lt;int&gt;\n 1 Barry Bonds                   762\n 2 Hank Aaron                    755\n 3 Babe Ruth                     714\n 4 Albert Pujols                 703\n 5 Alex Rodriguez                696\n 6 Willie Mays                   660\n 7 Ken Griffey                   630\n 8 Jim Thome                     612\n 9 Sammy Sosa                    609\n10 Frank Robinson                586\n11 Mark McGwire                  583\n12 Harmon Killebrew              573\n13 Rafael Palmeiro               569\n14 Reggie Jackson                563\n15 Manny Ramirez                 555"
+    "text": "Player\nCareer home runs\nSeasons played\n\n\n\n\nBarry Bonds\n762\n1986 to 2007\n\n\nHank Aaron\n755\n1954 to 1976\n\n\nBabe Ruth\n714\n1914 to 1935\n\n\nAlbert Pujols\n703\n2001 to 2022\n\n\nAlex Rodriguez\n696\n1994 to 2016\n\n\nWillie Mays\n660\n1948 to 1973\n\n\nKen Griffey\n630\n1989 to 2010\n\n\nJim Thome\n612\n1991 to 2012\n\n\nSammy Sosa\n609\n1989 to 2007\n\n\nFrank Robinson\n586\n1956 to 1976\n\n\nMark McGwire\n583\n1986 to 2001\n\n\nHarmon Killebrew\n573\n1954 to 1975\n\n\nRafael Palmeiro\n569\n1986 to 2005\n\n\nReggie Jackson\n563\n1967 to 1987\n\n\nManny Ramirez\n555\n1993 to 2011"
   },
   {
     "objectID": "home-runs.html",
