@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Baseball",
+    "section": "",
+    "text": "Baseball Through the Years\nExplore Major League Baseball history through the Lahman database. Season totals can make shortened years look like home-run collapses; the Home runs page uses home runs per team-game to put those totals in context and show how the rate varies across seasons.\nThe Sluggers page ranks career home-run leaders, with Barry Bonds at the top with 762, and looks at their years in the game and Bonds’ season-by-season totals. Visit the analysis pages in the navbar to explore both stories."
+  },
+  {
+    "objectID": "sluggers.html#barry-bonds-by-season",
+    "href": "sluggers.html#barry-bonds-by-season",
+    "title": "Sluggers",
+    "section": "Barry Bonds by season",
+    "text": "Barry Bonds by season"
+  },
+  {
+    "objectID": "home-runs.html",
+    "href": "home-runs.html",
+    "title": "Home runs",
+    "section": "",
+    "text": "Warning: Removed 1 row containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "home-runs.html#season-comparison",
+    "href": "home-runs.html#season-comparison",
+    "title": "Home runs",
+    "section": "Season comparison",
+    "text": "Season comparison\n\n\n# A tibble: 4 × 4\n  yearID total_home_runs total_team_games home_runs_per_game\n   &lt;int&gt;           &lt;int&gt;            &lt;int&gt;              &lt;dbl&gt;\n1   2019            6776             4858               1.39\n2   1981            1781             2788               0.64\n3   1994            3306             3200               1.03\n4   2020            2304             1796               1.28"
+  }
+]
