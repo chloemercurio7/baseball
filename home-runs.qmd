@@ -9,17 +9,33 @@ library(Lahman)
 ```
 
 ```{r}
-Teams |>
+hr_by_season <- Teams |>
   group_by(yearID) |>
   summarize(
     total_home_runs = sum(HR),
     total_team_games = sum(G)
   ) |>
-  mutate(home_runs_per_game = total_home_runs / total_team_games) |>
+  mutate(
+    home_runs_per_game = total_home_runs / total_team_games,
+    season_type = if_else(
+      yearID %in% c(1918, 1919, 1981, 1994, 1995, 2020),
+      "Shortened seasons",
+      "Other seasons"
+    )
+  )
+```
+
+```{r}
+hr_by_season |>
   ggplot(aes(x = yearID, y = home_runs_per_game)) +
   geom_line() +
+  geom_point(aes(color = season_type), size = 1.8) +
+  scale_color_manual(
+    name = "Season type",
+    values = c("Other seasons" = "#4C78A8", "Shortened seasons" = "#E45756")
+  ) +
   labs(
-    title = "Major League Home Runs per Team-Game by Season",
+    title = "Home Runs per Team-Game Across MLB Seasons",
     x = "Season",
     y = "Home runs per team-game",
     caption = "Source: Lahman database"
@@ -29,13 +45,9 @@ Teams |>
 ## Season comparison
 
 ```{r}
-Teams |>
+hr_by_season |>
   filter(yearID %in% c(2019, 1981, 1994, 2020)) |>
-  group_by(yearID) |>
-  summarize(
-    total_home_runs = sum(HR),
-    total_team_games = sum(G)
-  ) |>
-  mutate(home_runs_per_game = round(total_home_runs / total_team_games, 2)) |>
+  mutate(home_runs_per_game = round(home_runs_per_game, 2)) |>
+  select(yearID, total_home_runs, total_team_games, home_runs_per_game) |>
   arrange(match(yearID, c(2019, 1981, 1994, 2020)))
 ```

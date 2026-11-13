@@ -7,6 +7,13 @@
     "text": "Baseball Through the Years\nExplore the history of Major League Baseball through its data. Using the Lahman database, this site traces the players, teams, and seasons that have shaped the game."
   },
   {
+    "objectID": "home-runs.html",
+    "href": "home-runs.html",
+    "title": "Home runs",
+    "section": "",
+    "text": "Warning: Removed 1 row containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
     "objectID": "home-runs.html#season-comparison",
     "href": "home-runs.html#season-comparison",
     "title": "Home runs",
