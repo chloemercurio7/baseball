@@ -5,12 +5,5 @@
     "title": "Baseball",
     "section": "",
     "text": "Baseball Through the Years\nExplore the history of Major League Baseball through its data. Using the Lahman database, this site traces the players, teams, and seasons that have shaped the game."
-  },
-  {
-    "objectID": "home-runs.html",
-    "href": "home-runs.html",
-    "title": "Home runs",
-    "section": "",
-    "text": "# A tibble: 155 × 3\n   yearID total_home_runs total_team_games\n    &lt;int&gt;           &lt;int&gt;            &lt;int&gt;\n 1   1871              47              254\n 2   1872              37              366\n 3   1873              47              398\n 4   1874              40              464\n 5   1875              40              690\n 6   1876              40              520\n 7   1877              24              360\n 8   1878              23              368\n 9   1879              58              642\n10   1880              62              680\n# ℹ 145 more rows"
   }
 ]
