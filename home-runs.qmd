@@ -9,6 +9,7 @@ library(Lahman)
 ```
 
 ```{r}
+#| cache: true
 hr_by_season <- Teams |>
   group_by(yearID) |>
   summarize(
