@@ -19,10 +19,28 @@ Batting |>
   ) |>
   slice_max(career_home_runs, n = 15, with_ties = FALSE) |>
   left_join(People |> select(playerID, nameFirst, nameLast), by = "playerID") |>
-  transmute(
-    Player = paste(nameFirst, nameLast),
-    `Career home runs` = career_home_runs,
-    `Seasons played` = paste(first_year, "to", last_year)
+  mutate(
+    player = paste(nameFirst, nameLast),
+    active_during_steroid_era = if_else(
+      last_year >= 1994 & first_year <= 2009,
+      "Yes",
+      "No"
+    )
   ) |>
-  knitr::kable()
+  ggplot(aes(
+    x = career_home_runs,
+    y = reorder(player, career_home_runs),
+    fill = active_during_steroid_era
+  )) +
+  geom_col() +
+  scale_fill_manual(
+    name = "Active during steroid era",
+    values = c("No" = "#4C78A8", "Yes" = "#E45756")
+  ) +
+  labs(
+    title = "Career Home Runs: Top 15 Sluggers",
+    x = "Career home runs",
+    y = "Player",
+    caption = "Source: Lahman database"
+  )
 ```
